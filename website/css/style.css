@@ -52,6 +52,14 @@ body {
     left: 100%
 }
 
+.desktop-logo{
+    display: inline-block;
+}
+
+.mobile-logo{
+    display: none;
+}
+
 .logo {
     font-size: 2rem;
     color : #ffffff;
@@ -87,6 +95,14 @@ body {
 }
 
 @media (max-width: 760px) {
+    .desktop-logo{
+        display: none;
+    }
+
+    .mobile-logo{
+        display: inline-flex;
+    }
+
     .icons {
         display: inline-flex;
     }
