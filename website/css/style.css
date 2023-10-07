@@ -60,13 +60,6 @@ body {
     display: none;
 }
 
-.logo {
-    font-size: 2rem;
-    color : #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
 .navbar a {
     font-size: 1.15rem;
     color : #ffffff;
@@ -87,6 +80,14 @@ body {
     cursor: pointer;
     display: none;
 }
+
+.mobile-logo {
+    display: none;
+    width: 110px;
+    height: auto;
+    margin-top: 5px;
+}
+
 
 @media (max-width: 990px){
     .header {
