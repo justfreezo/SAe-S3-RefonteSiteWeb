@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,6 +60,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    width: 125vw; /* 100% of viewport width */
+    height: 125vh; /* 100% of viewport height */
+    object-fit: cover;
+    background-color: #000; /* Set background color */
 }
 
 .logo{
@@ -163,72 +168,60 @@ body {
     background-color: #3c368a;
 }
 
-.circle-button {
-    width: 100px;
+.menu {
+    position: fixed;
+    width: 300px;
     height: 100px;
-    border-radius: 50%;
-    border: 2px solid #000;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 2%;
+    justify-content: right;
+    align-items: flex-end;
+    margin:0 10px 10px 0
 }
-
-.circle-button:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.other-buttons {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #000;
-    display: none;
+.menu .toggle {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0a900;
+    height: 50px;
+    width: 50px;
+    transition: 1s;
+    font-size: 1.2em;
+    color: #000;
+    z-index: 10;
+    border-radius: 50%;
     cursor: pointer;
 }
-
-.circle-button:hover .other-buttons {
-    display: block;
+.menu li {
+    position: absolute;
+    left: 130px;
+    transform-origin: 140px;
+    transform: rotate(0deg) translateX(125px);
+    list-style-type: none;
+    transition: .9s;
 }
-
-.circle-button:hover .other-buttons {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+.menu.active .toggle {
+    transform: rotate(350deg);
 }
+.menu.active li {
+    transform: rotate(calc(360deg / 16 * var(--i))) translateX(0px);
 
-.circle-button:hover .other-buttons:nth-child(1) {
-    animation: appear 0.3s 0.1s forwards, rotate 0.3s 0.1s forwards;
 }
+.menu.active li a {
+    transform: rotate(calc(360deg / -16 * var(--i))) translateX(0px);
 
-.circle-button:hover .other-buttons:nth-child(2) {
-    animation: appear 0.3s 0.4s forwards, rotate 0.3s 0.4s forwards;
-    top: -40px;
 }
-
-.circle-button:hover .other-buttons:nth-child(3) {
-    animation: appear 0.3s 0.7s forwards, rotate 0.3s 0.7s forwards;
-    top: -105px;
-}
-
-
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes rotate {
-    to {
-        transform: translate(-50%, -90px);
-    }
+.menu li a {
+    text-decoration: none;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0a900;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: #000;
 }
 
 @media (max-width: 990px){
