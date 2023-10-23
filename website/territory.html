@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territoire - La Porte du Hainaut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMenus.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <script src="javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/23886ac539.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/LogoOriginal.png" alt="Logo de La Porte du Hainaut" class="desktop-logo">
+        <img src="images/LogoMini.png" alt="Logo" class="mobile-logo">
+    </a>
+
+    <input type="checkbox" id="check">
+    <label for "check" class="icons">
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        <a href="territory.html" style="--i:0;">Territoire</a>
+        <a href="#" style="--i:1;">Institution</a>
+        <a href="#" style="--i:2;">Quotidien</a>
+        <div class="searchbar">
+            <label>
+                <input type="text" placeholder="Rechercher..." oninput="handleInput(this)">
+            </label>
+            <a href="#"></a>
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+</header>
+
+<div class="big-card">
+    <h2 class="big-card-title"> Le Territoire</h2>
+
+    <div class="links">
+        <div class="card" style="width: 22rem;">
+            <a href="#">
+                <img src="images/Histoire.jpg" class="card-img-top zoom-image" alt="Histoire">
+                <div class="card-body">
+                    <h5 class="card-title">Notre histoire</h5>
+                    <p class="card-text">
+                        La Porte du Hainaut est une terre riche de l'Histoire des hommes dont l'architecture demeure l'un des plus fidèles témoins.
+                        <br>
+                        Venez la découvrir.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card" style="width: 22rem;">
+            <a href="#">
+                <img src="images/Patrimoine.jpg" class="card-img-top zoom-image" alt="Patrimoine">
+                <div class="card-body">
+                    <h5 class="card-title">Notre patrimoine</h5>
+                    <p class="card-text">
+                        Le territoire de La Porte du Hainaut dispose d'un riche patrimoine minier, historique, architectural and cultuel.
+                        <br>
+                        Vous trouverez ici une liste non exhaustive de cette richesse.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card" style="width: 22rem;">
+            <a href="#">
+                <img src="images/Communes.png" class="card-img-top zoom-image" alt="Communes">
+                <div class="card-body">
+                    <h5 class="card-title">Les Communes</h5>
+                    <p class="card-text">
+                        Le territoire de La Porte du Hainaut est réparti sur trois secteurs géographiques
+                        <br>
+                        En savoir plus sur l'Amandinois, le Denaisis et l'Ostrevant.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-background">
+    <div class="footer-content">
+        <div class="footer-section address-section">
+            <h3>Adresse</h3>
+            <p>Rue Michel-Rondet - BP 59
+                59135 WALLERS-ARENBERG</p>
+            <p>Tel: 03 27 09 05 05</p>
+            <p>Email: contact@agglo-porteduhainaut.fr</p>
+        </div>
+
+        <div class="footer-section social-section">
+            <h3>Réseaux Sociaux</h3>
+            <p>Restez informés</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/la-porte-du-hainaut/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/PorteduHainaut" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/LaPorteduHainaut" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCiuR9YgeP12kISOHd9B2v1Q" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section links-section">
+            <h3>Autres Liens</h3>
+            <div class="random-links">
+                <!-- Add your random links here -->
+                <a href="#">Enchères publiques</a>
+                <a href="#">Données personnelles</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Crédits</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+        <a href="#">Plan de site</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Accessibilité</a>
+        <a href="#">Rejoignez-nous !</a>
+        <a href="#">Contact presse</a>
+    </div>
+</footer>
+
+</body>
+</html>

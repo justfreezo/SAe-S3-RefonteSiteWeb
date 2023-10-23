@@ -2,8 +2,7 @@ window.addEventListener('load', init);
 
 
 function init(){
-    var menu = document.querySelector('.menu');
-    var toggle = document.querySelector('.toggle');
+    let toggle = document.querySelector('.toggle');
     toggle.addEventListener('click', toggleMenu);
 }
 
