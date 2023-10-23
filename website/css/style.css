@@ -15,6 +15,7 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .header {
@@ -55,15 +56,13 @@ body {
 }
 
 #myVideo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    width: 125vw; /* 100% of viewport width */
-    height: 125vh; /* 100% of viewport height */
-    object-fit: cover;
-    background-color: #000; /* Set background color */
+    object-fit: none;
 }
 
 .logo{
@@ -172,11 +171,14 @@ body {
     position: fixed;
     width: 300px;
     height: 100px;
+    right: 10px;
+    bottom: 10px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: flex-end;
-    margin:0 10px 10px 0
+    margin: 0 10px 10px 0;
 }
+
 .menu .toggle {
     position: absolute;
     display: flex;
@@ -192,29 +194,34 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .menu li {
     position: absolute;
-    left: 130px;
+    left: 131px;
     transform-origin: 140px;
     transform: rotate(0deg) translateX(125px);
     list-style-type: none;
     transition: .9s;
 }
+
 .menu.active .toggle {
     transform: rotate(350deg);
 }
+
 .menu.active li {
-    transform: rotate(calc(360deg / 16 * var(--i))) translateX(0px);
+    transform: rotate(calc(360deg / 16 * var(--i))) translateX(15px);
 
 }
+
 .menu.active li a {
     transform: rotate(calc(360deg / -16 * var(--i))) translateX(0px);
 
 }
+
 .menu li a {
     text-decoration: none;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,6 +229,67 @@ body {
     border-radius: 50%;
     font-size: 1.2em;
     color: #000;
+}
+
+.tooltipText {
+    position: absolute;
+    background-color: #f0a900;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tooltipText::before {
+    content: "";
+    position: absolute;
+}
+
+.menu.active .tooltip:hover .tooltipText {
+    right: 110%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.maDiv {
+    width: 100%;
+    height: 87vh;
+    background-color: magenta;
+    text-align: center;
+    margin-top: 100vh;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: justify;
+    align-items: flex-start;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2%;
+}
+
+#contact img {
+    width: 110px;
+    height: auto;
+    margin-top: 10%;
+    margin-right: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact a {
+    color: black;
 }
 
 @media (max-width: 990px){
@@ -303,4 +371,3 @@ body {
         max-width: 150px;
     }
 }
-
