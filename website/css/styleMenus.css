@@ -4,7 +4,7 @@ body {
     background-image: url("../images/Background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional: Keeps the image fixed in place */
+    background-attachment: fixed;
     background-color: #ffffff;
 }
 
@@ -28,7 +28,6 @@ body {
     grid-auto-flow: column;
     justify-content: center;
     align-items: center;
-    /*gap: 100px;*/
 }
 
 .links .card {
@@ -54,6 +53,15 @@ body {
 
 .links .card .card-text {
     text-align: justify;
+}
+
+h3{
+    font-weight: bold;
+    font-size: initial;
+}
+
+p{
+    margin-bottom: unset;
 }
 
 @media (max-width: 760px) {

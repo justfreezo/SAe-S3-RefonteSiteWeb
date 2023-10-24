@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Porte du Hainaut</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <script src="javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/23886ac539.js"></script>
+
+</head>
+
+<body>
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/LogoOriginal.png" alt="Logo de La Porte du Hainaut" class="desktop-logo">
+        <img src="images/LogoMini.png" alt="Logo" class="mobile-logo">
+    </a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        <a href="territory.html" style="--i:0;">Territoire</a>
+        <a href="#" style="--i:1;">Institution</a>
+        <a href="#" style="--i:2;">Quotidien</a>
+        <div class="searchbar">
+            <label>
+                <input type="text" placeholder="Rechercher..." oninput="handleInput(this)">
+            </label>
+            <a href="#"></a>
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Post Title 1</h2>
+        <p class="metadata">Published on September 1, 2023</p>
+        <img src="post1.jpg" alt="Post Image 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        <a href="post1.html">Read more</a>
+    </article>
+
+    <article>
+        <h2>Post Title 2</h2>
+        <p class="metadata">Published on September 5, 2023</p>
+        <img src="post2.jpg" alt="Post Image 2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        <a href="post2.html">Read more</a>
+    </article>
+
+    <!-- Add more articles as needed -->
+
+</main>
+
+<footer class="footer-background">
+    <div class="footer-content">
+        <div class="footer-section address-section">
+            <h3>Adresse</h3>
+            <p>Rue Michel-Rondet - BP 59
+                59135 WALLERS-ARENBERG</p>
+            <p>Tel: 03 27 09 05 05</p>
+            <p>Email: contact@agglo-porteduhainaut.fr</p>
+        </div>
+
+        <div class="footer-section social-section">
+            <h3>Réseaux Sociaux</h3>
+            <p>Restez informés</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/la-porte-du-hainaut/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/PorteduHainaut" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/LaPorteduHainaut" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCiuR9YgeP12kISOHd9B2v1Q" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section links-section">
+            <h3>Autres Liens</h3>
+            <div class="random-links">
+                <a href="http://www.agence-porteduhainaut.com/">Investir</a>
+                <a href="https://www.arenberg-minecreative.fr">Réaliser</a>
+                <a href="https://www.tourisme-porteduhainaut.com">Visiter</a>
+                <a href="http://www.agglo-porteduhainaut.fr/credits">Crédits</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="https://www.agglo-porteduhainaut.fr/sitemap">Plan de site</a>
+        <a href="http://www.agglo-porteduhainaut.fr/mentions-legales">Mentions légales</a>
+        <a href="https://porte-du-hainaut.carte-interactive.net/#/home">Accessibilité</a>
+        <a href="https://linktr.ee/laporteduhainaut">Rejoignez-nous !</a>
+        <a href="https://www.agglo-porteduhainaut.fr/espace-presse">Contact presse</a>
+    </div>
+</footer>
+</body>
+
+</html>
