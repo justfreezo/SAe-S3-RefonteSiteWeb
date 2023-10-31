@@ -47,8 +47,8 @@ var repeat = function (activeClass){
 
 function init() {
     var toggle = document.querySelector('.toggle');
-    btns = document.querySelectorAll('.btn');  // Assign btns globally
-    slides = document.querySelectorAll('.slide');  // Assign slides globally
+    btns = document.querySelectorAll('.btn');
+    slides = document.querySelectorAll('.slide');
     let currentSlide = 1;
 
     toggle.addEventListener('click', toggleMenu);
