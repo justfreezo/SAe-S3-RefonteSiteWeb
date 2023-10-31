@@ -17,8 +17,8 @@
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="23886ac539" level="application" />
     <orderEntry type="library" name="slick-carousel" level="application" />
-    <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="boxicons" level="application" />
+    <orderEntry type="library" name="23886ac539" level="application" />
   </component>
 </module>
