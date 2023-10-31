@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Porte du Hainaut</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleHistory.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <script src="javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/23886ac539.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/LogoOriginal.png" alt="Logo de La Porte du Hainaut" class="desktop-logo">
+            <img src="images/LogoMini.png" alt="Logo" class="mobile-logo">
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="territory.html" style="--i:0;">Territoire</a>
+            <a href="#" style="--i:1;">Institution</a>
+            <a href="#" style="--i:2;">Quotidien</a>
+            <div class="searchbar">
+                <label>
+                    <input type="text" placeholder="Rechercher..." oninput="handleInput(this)">
+                </label>
+                <a href="#"></a>
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1> Toutes les actualités </h1>
+
+        <div class="news-card">
+            <img src="images/Actu1.jpg" alt="News 1">
+            <div class="news-content">
+                <div class="news-title">PROGRAMME DES SCÈNES PLURIELLES SEPTEMBRE - DÉCEMBRE 2023</div>
+                <div class="news-description">Les Scènes Plurielles sont de retour en cette fin d'année avec un programme riche. Danse, théatre, magie et bien d'autres disciplines seront représentées.</div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/Actu2.jpg" alt="News 2">
+            <div class="news-content">
+                <div class="news-title">LA ZAC DES PIERRES BLANCHES DE DENAIN</div>
+                <div class="news-description">Créé sur les 85 hectares de l’ancien site d’activité sidérurgique USINOR, fermé au début des années 80, le parc d’activités des Pierres Blanches est implanté à Denain au bord du canal à grand gabarit de l’Escaut dans un quartier inscrit au...</div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/Actu3.png" alt="News 3">
+            <div class="news-content">
+                <div class="news-title">INFORMATIONS ET CONCERTATION DU PLUI</div>
+                <div class="news-description">Approuvé en janvier 2021, le Plan Local d'Urbanisme intercommunal (PLUi) évolue pour mieux répondre aux enjeux de notre territoire.</div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/Actu4.jpg" alt="News 4">
+            <div class="news-content">
+                <div class="news-title">UNE PRIME POUR VOUS ACCOMPAGNER VERS LES MOBILITÉS DÉCARBONÉES</div>
+                <div class="news-description">Depuis le 1er mars 2023, les habitants du territoire de La Porte du Hainaut peuvent bénéficier d'une prime à l'achat d'un vélo classique, à assistance électrique ou trottinette électrique.</div>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="images/Actu5.jpg" alt="News 5">
+            <div class="news-content">
+                <div class="news-title">CONSULTATION POUR LA ZAC DU CHATEAU D'EAU À DOUCHY-LES-MINES</div>
+                <div class="news-description">Le développement économique, priorité de La Porte du Hainaut.</div>
+            </div>
+        </div>
+
+        <a href="https://www.agglo-porteduhainaut.fr/actualites" class="more">Plus de Résultats</a>
+    </main>
+
+    <footer class="footer-background">
+        <div class="footer-content">
+            <div class="footer-section address-section">
+                <h3>Adresse</h3>
+                <p>Rue Michel-Rondet - BP 59
+                    59135 WALLERS-ARENBERG</p>
+                <p>Tel: 03 27 09 05 05</p>
+                <p>Email: contact@agglo-porteduhainaut.fr</p>
+            </div>
+
+            <div class="footer-section social-section">
+                <h3>Réseaux Sociaux</h3>
+                <p>Restez informés</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/la-porte-du-hainaut/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/PorteduHainaut" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/LaPorteduHainaut" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCiuR9YgeP12kISOHd9B2v1Q" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links-section">
+                <h3>Autres Liens</h3>
+                <div class="random-links">
+                    <a href="http://www.agence-porteduhainaut.com/">Investir</a>
+                    <a href="https://www.arenberg-minecreative.fr">Réaliser</a>
+                    <a href="https://www.tourisme-porteduhainaut.com">Visiter</a>
+                    <a href="http://www.agglo-porteduhainaut.fr/credits">Crédits</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://www.agglo-porteduhainaut.fr/sitemap">Plan de site</a>
+            <a href="http://www.agglo-porteduhainaut.fr/mentions-legales">Mentions légales</a>
+            <a href="https://porte-du-hainaut.carte-interactive.net/#/home">Accessibilité</a>
+            <a href="https://linktr.ee/laporteduhainaut">Rejoignez-nous !</a>
+            <a href="https://www.agglo-porteduhainaut.fr/espace-presse">Contact presse</a>
+        </div>
+    </footer>
+</body>
+
+</html>
