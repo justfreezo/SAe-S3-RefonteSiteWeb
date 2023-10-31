@@ -7,3 +7,8 @@ body {
     background-attachment: fixed;
     background-color: #ffffff;
 }
+
+main img{
+    width: 100%;
+
+}
